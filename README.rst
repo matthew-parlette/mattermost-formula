@@ -1,5 +1,5 @@
 ================
-template-formula
+mattermost-formula
 ================
 
 A saltstack formula that is empty. It has dummy content to help with a quick
@@ -16,7 +16,7 @@ Available states
 .. contents::
     :local:
 
-``template``
+``mattermost``
 ------------
 
-Installs the template package, and starts the associated template service.
+Installs the mattermost package, and starts the associated mattermost service.

@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "mattermost/map.jinja" import mattermost with context %}
 
-template-pkg:
-  pkg.installed:
-    - name: {{ template.pkg }}
+mattermost-image:
+  dockerng.image_present:
+    - name: {{ mattermost.image }}:{{ mattermost.branch }}
+    - force: True

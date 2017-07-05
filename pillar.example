@@ -1,3 +1,6 @@
-template:
-  lookup:
-    master: template-master
+mattermost:
+  filename: /path/on/host.ext
+  directory: /path/on/host
+  port: 3000
+  environment:
+    # key: value
