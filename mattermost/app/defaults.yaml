@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+mattermost:
+  app:
+    image: mattermost/mattermost-prod-app
+    name: mattermost-app
+    branch: latest
+    directory:
+      config: /var/mattermost/config
+      data: /var/mattermost/data
+      logs: /var/mattermost/logs
+    environment:
+      MM_USERNAME: mmuser
+      MM_DBNAME: mattermost

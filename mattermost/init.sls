@@ -3,5 +3,5 @@
 
 include:
   - mattermost.database
-  # - mattermost.app
+  - mattermost.app
   # - mattermost.web

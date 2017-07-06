@@ -7,3 +7,15 @@ mattermost:
     environment:
       POSTGRES_PASSWORD: password
     port: 5433
+  app:
+    image: mattermost/mattermost-prod-app
+    name: mattermost-app
+    branch: latest
+    directory:
+      config: /var/mattermost/config
+      data: /var/mattermost/data
+      logs: /var/mattermost/logs
+    environment:
+      MM_PASSWORD: password
+      DB_HOST: hostname
+      DB_PORT_NUMBER: 5432
