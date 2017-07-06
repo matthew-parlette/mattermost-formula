@@ -2,6 +2,6 @@
 # vim: ft=sls
 
 include:
-  - mattermost.install
-  - mattermost.config
-  - mattermost.service
+  - mattermost.database
+  # - mattermost.app
+  # - mattermost.web

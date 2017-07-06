@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
 mattermost:
   database:
     image: mattermost/mattermost-prod-db
@@ -5,5 +7,5 @@ mattermost:
     branch: latest
     directory: /var/mattermost/database
     environment:
-      POSTGRES_PASSWORD: password
-    port: 5433
+      POSTGRES_USER: mmuser
+      POSTGRES_DB: mattermost
